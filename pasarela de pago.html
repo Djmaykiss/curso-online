@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        section {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        #resultado-pago {
+            margin-top: 20px;
+            color: #27ae60;
+        }
+
+        /* Estilos específicos para el footer de la pasarela de pago */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+        
+    </style>
+
+
+    <header>
+        <h1>Pasarela de Pago</h1>
+    </header>
+
+    <section id="pago-form">
+        <!-- Formulario de Pago -->
+        <label for="nombre-tarjeta">Nombre en la Tarjeta:</label>
+        <input type="text" id="nombre-tarjeta" required>
+
+        <label for="numero-tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="numero-tarjeta" required>
+
+        <label for="fecha-expiracion">Fecha de Expiración:</label>
+        <input type="text" id="fecha-expiracion" placeholder="MM/YY" required>
+
+        <label for="codigo-seguridad">Código de Seguridad:</label>
+        <input type="text" id="codigo-seguridad" required>
+
+        <button onclick="realizarPago()">Pagar</button>
+        <p id="resultado-pago"></p>
+    </section>
+
+    <footer>
+        <p><a href="./iniciosesion.html">Volver a la Página Principal</a></p>
+    </footer>
+<script>
+    function realizarPago() {
+        // En un escenario real, aquí se enviaría la información de pago al servidor
+        // y se realizaría la lógica de procesamiento de pago.
+    
+        // En este ejemplo, simplemente mostramos un mensaje de éxito.
+        document.getElementById('resultado-pago').innerText = 'Pago exitoso. ¡Gracias por tu compra!';
+    }
+    
+</script>
+</body>
+</html>

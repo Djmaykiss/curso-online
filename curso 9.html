@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/cursos.css">
+        <title>Curso de Photoshop Online</title>
+    </head>
+    <body>
+        <header>
+            <h1>Curso de Photoshop Online</h1>
+        </header>
+    
+        <section id="clases">
+            <!-- Aquí puedes agregar tus videos y enlaces de descarga -->
+            <div class="clase" data-video="video1.mp4" data-descarga="archivo1.zip">
+                <h2>Clase 9: #</h2>
+                <button class="completado" onclick="marcarComoCompletado()">Completado</button>
+                <a href="#" target="_blank" class="descargar">Descargar Archivos</a>
+                <progress value="0" max="100"></progress>
+            </div>
+            <button id="completedButton">Completado</button>
+            <div id="progressBar">
+               <div id="progress"></div>
+            </div>
+            <div class="botones">
+                <!-- Botón para la lección anterior -->
+                <a href="./curso 8.html" class="leccion-anterior">
+                    <button>Lección Anterior</button>
+                </a>
+          
+            <!-- Botón para la siguiente lección con hipervínculo -->
+            <a href="./curso 10.html" class="siguiente-leccion">
+                <button>Siguiente Lección</button>
+            </a>
+
+             <!-- Botón para ir a la página de progreso o donde están todas las lecciones -->
+        <a href="./alumnos.html" class="ir-a-progreso">
+            <button>Ir a tu Progreso</button>
+        </a>
+    </div>
+            <!-- Repite la estructura para cada clase -->
+        </section>
+    
+        <script src="./js/Cursos.js"></script>
+    </body>
+    
+    
+</html>
